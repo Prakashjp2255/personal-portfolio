@@ -1,12 +1,22 @@
 import React from "react";
+import StatInfoCard from "./StatInfoCard";
 
 import PROFILE_PIC from "../Components/Assests/img 4.jpeg";
-import ICON_1 from "../Components/Assests/html.gif";
-import ICON_2 from "../Components/Assests/js.gif";
-import ICON_3 from "../Components/Assests/react.gif";
-import ICON_4 from "../Components/Assests/img 6.jpeg";
+import ICON_1 from "../Components/Assests/react.gif";
+import ICON_2 from "../Components/Assests/html.gif";
+import ICON_3 from "../Components/Assests/js.gif";
+import ICON_4 from "../Components/Assests/css.gif";
 
 const Hero = () => {
+
+  const STATS = [
+  { id: 1, count: 2, label: "Internships\n(Gold Coast IT Solutions, VEI Technologies)" },
+  { id: 2, count: 5, label: "Projects Completed\n(ECommerce, Notes App , POS App...etc)" },
+  { id: 3, count: 3, label: "Certifications\n(CISCO PYTHON ESSENTIALS-1,2)" },
+  { id: 4, count: 10, label: "Technologies Known\n(React, Node, MongoDB...etc)" }
+];
+
+
   return (
     <section id="hero" className="container mx-auto px-8">
       <div className="flex flex-col lg:flex-row gap-14 items-center justify-between mt-[80px] matti">
@@ -34,7 +44,11 @@ const Hero = () => {
         </div>
 
         <div className="w-[300px] md:w-[370px] h-[350px] md:h-[428px]  rounded-3xl relative order-1 lg:order-2 ">
-          <img src={PROFILE_PIC} alt="Profile Pic" className="profile-pic rounded-xl mt-5 "  />
+          <img
+            src={PROFILE_PIC}
+            alt="Profile Pic"
+            className="profile-pic rounded-xl mt-5 "
+          />
 
           <img
             src={ICON_1}
@@ -42,21 +56,31 @@ const Hero = () => {
             className="icon-img -left-10 bottom-20 rotate-[1.75deg] w-[200px] h-auto"
           />
 
-          <img src={ICON_2} 
-          alt="Icon 2" 
-          className="icon-img size-24 left-8 md:left-10  -bottom-2 rotate-[1.75deg]" />
+          <img
+            src={ICON_2}
+            alt="Icon 2"
+            className="icon-img size-24 left-8 md:left-10  -bottom-2 rotate-[1.75deg]"
+          />
 
-          <img src={ICON_3} 
-          alt="Icon 3" 
-          className="icon-img size-24 left-[215px] md:left-[265px] -bottom-2 rotate-[1.75deg]" />
+          <img
+            src={ICON_3}
+            alt="Icon 3"
+            className="icon-img size-24 left-[215px] md:left-[265px] -bottom-2 rotate-[1.75deg]"
+          />
 
-          <img src={ICON_4} 
-          alt="Icon 4" 
-          className="icon-img size-24  -right-10 bottom-20 rotate-[1.75deg] ]" />
+          <img
+            src={ICON_4}
+            alt="Icon 4"
+            className="icon-imge left-[315px] size-24 w-auto  -right-10 bottom-20 rotate-[1.75deg] ]"
+          />
         </div>
       </div>
 
-      <div>Hero</div>
+      <div className="flex gap-12 mt-16 md:mt-24 flex-wrap">
+        {STATS.map((item) => (
+          <StatInfoCard key={item.id} count={item.count} label={item.label} />
+        ))}
+      </div>
     </section>
   );
 };

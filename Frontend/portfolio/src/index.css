@@ -39,6 +39,17 @@
 .icon-img{
   @apply w-12 md:w-16 h-12 md:h-16 absolute transition-transform duration-300 ease-in-out hover:rotate-0;
 }
+.icon-imge{
+  @apply w-auto md:w-auto h-12 md:h-16 absolute transition-transform duration-300 ease-in-out hover:rotate-0;
+}
+
+.section-title{
+  @apply text-[30px] font-semibold text-center bg-gradient-to-r from-[#0052D4] via-[#65C7F7] to-[#9CECFB] bg-clip-text text-transparent
+}
+
+
+
+
 /* .matti{
   @apply top-8
 } */
@@ -52,7 +63,10 @@ background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+
 
 
 
-/* 
-*{
+
+.mama{
   font-family: 'Akira Expanded', sans-serif;
-} */
+}
+.mama-talk{
+  font-family: 'Akira Expanded', sans-serif;
+}
