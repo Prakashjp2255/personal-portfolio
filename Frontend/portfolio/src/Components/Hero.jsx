@@ -8,14 +8,24 @@ import ICON_3 from "../Components/Assests/js.gif";
 import ICON_4 from "../Components/Assests/css.gif";
 
 const Hero = () => {
-
   const STATS = [
-  { id: 1, count: 2, label: "Internships\n(Gold Coast IT Solutions, VEI Technologies)" },
-  { id: 2, count: 5, label: "Projects Completed\n(ECommerce, Notes App , POS App...etc)" },
-  { id: 3, count: 3, label: "Certifications\n(CISCO PYTHON ESSENTIALS-1,2)" },
-  { id: 4, count: 10, label: "Technologies Known\n(React, Node, MongoDB...etc)" }
-];
-
+    {
+      id: 1,
+      count: 2,
+      label: "Internships\n(Gold Coast IT Solutions, VEI Technologies)",
+    },
+    {
+      id: 2,
+      count: 5,
+      label: "Projects Completed\n(ECommerce, Notes App , POS App...etc)",
+    },
+    { id: 3, count: 3, label: "Certifications\n(CISCO PYTHON ESSENTIALS-1,2)" },
+    {
+      id: 4,
+      count: 10,
+      label: "Technologies Known\n(React, Node, MongoDB...etc)",
+    },
+  ];
 
   return (
     <section id="hero" className="container mx-auto px-8">
@@ -34,12 +44,20 @@ const Hero = () => {
           </p>
 
           <div className="flex justify-center lg:justify-start gap-4 md:gap-8 mt-6">
-            <button className="flex-1 md:flex-none action-btn-outline btn-scale-anim">
+            <a
+              href="#projects"
+              className="flex-1 md:flex-none action-btn-outline btn-scale-anim text-center  pt-[12.5px]"
+            >
               View My Work
-            </button>
-            <button className="flex-1 md:flex-none action-btn btn-scale-anim">
+            </a>
+
+            <a
+              href="/jayaprakash_SoftwareDeveloper.pdf"
+              download
+              className="flex-1 md:flex-none action-btn btn-scale-anim pt-[12.5px]"
+            >
               Download Resume
-            </button>
+            </a>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
-import { FaReact, FaNodeJs, FaDatabase, FaHtml5 } from "react-icons/fa"; // Example icons from react-icons
+import { FaReact, FaNodeJs, FaDatabase, FaHtml5, FaAngular , FaCss3Alt , FaJsSquare , FaJava  } from "react-icons/fa"; // Example icons from react-icons
+
 
 export const SKILL_TABS = [
   { id: "all", label: "All" },
@@ -40,4 +41,37 @@ export const SKILLS = [
     progress: 90,
     icon: FaHtml5,
   },
+  {
+    id: 5,
+    skill: "Angular JS",
+    description: " A TypeScript-based front-end framework developed by Google for building dynamic single-page applications.It uses a component-based architecture with built-in tools for routing, forms, and HTTP communication. ",
+    type: "frontend",
+    progress: 60,
+    icon: FaAngular ,
+  },
+  {
+    id: 6,
+    skill: "CSS 3 ",
+    description: "CSS3 is the latest evolution of Cascading Style Sheets, used for styling HTML elements on web pages.It introduces new features like media queries, flexbox, animations, transitions, and rounded corners for responsive design.",
+    type: "frontend",
+    progress: 80,
+    icon : FaCss3Alt ,
+  },
+  {
+    id: 7,
+    skill: "Express JS",
+    description: " Express.js is a minimal and flexible Node.js web application framework used to build APIs and web servers. It simplifies routing, middleware integration, and server-side logic for full-stack JavaScript applications. ",
+    type: "backend",
+    progress: 75,
+    icon : FaJsSquare  ,
+  },
+  {
+    id: 8,
+    skill: "Java",
+    description: " Java is a high-level, object-oriented programming language known for its platform independence and strong memory management.Widely used for building enterprise applications, Android apps, and backend systems using the JVM ",
+    type: "backend",
+    progress: 70,
+    icon : FaJava   ,
+  },
+  
 ];

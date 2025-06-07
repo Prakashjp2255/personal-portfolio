@@ -2,7 +2,7 @@ import React from "react";
 
 const Tabs = ({ tabList, activeTab, onChange }) => {
   return (
-    <div className="flex justify-between bg-blue-100 rounded-full p-1 w-fit mx-auto px-20 ">
+    <div className="flex justify-between bg-blue-100 rounded-full p-1 w-fit mx-auto md:px-20">
       {tabList.map((tab) => (
         <button
           key={tab.id}

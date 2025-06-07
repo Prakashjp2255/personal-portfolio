@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import SkillCard from "./skillcard"; // Correct relative path with filename
-import Tabs from "./Tabs"; // Correct relative path
-import { SKILLS, SKILL_TABS } from "../constants.js"; // Correct relative path
+import { AnimatePresence } from "framer-motion";
+import SkillCard from "./skillcard"; 
+import Tabs from "./Tabs"; //  relative path
+import { SKILLS, SKILL_TABS } from "../constants.js"; 
 
 const TechnicalProficiency = () => {
   const [tabData, setTabData] = useState(SKILLS);
@@ -46,15 +47,17 @@ const TechnicalProficiency = () => {
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 min-h-[430px] mt-6">
-          {tabData.map((skill) => (
-            <SkillCard
-              key={skill.id}
-              icon={<skill.icon className="w-6 h-6 text-primary" />}
-              skillName={skill.skill}
-              description={skill.description}
-              progress={skill.progress}
-            />
-          ))}
+          <AnimatePresence mode="wait">
+            {tabData.map((skill) => (
+              <SkillCard
+                key={skill.id}
+                icon={<skill.icon className="w-6 h-6 text-primary" />}
+                skillName={skill.skill}
+                description={skill.description}
+                progress={skill.progress}
+              />
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </section>

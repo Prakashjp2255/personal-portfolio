@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import LOGO from "../Components/Assests/logo2.png";
 
 const MENU_LINKS = [
-  { id: 1, label: "Home", to: "home", offset: -50 },
+  { id: 1, label: "Home", to: "hero", offset: -50 },
   { id: 2, label: "About", to: "about", offset: -50 },
   { id: 3, label: "Skills", to: "skills", offset: -50 },
   { id: 4, label: "Projects", to: "projects", offset: -50 },
