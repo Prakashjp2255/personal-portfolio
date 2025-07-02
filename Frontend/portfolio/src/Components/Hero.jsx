@@ -52,7 +52,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="/jayaprakash_SoftwareDeveloper.pdf"
+              href="/Ats resume.pdf"
               download
               className="flex-1 md:flex-none action-btn btn-scale-anim pt-[12.5px]"
             >
